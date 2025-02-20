@@ -4,10 +4,15 @@ public class QueueImpl<E> implements Queue<E>{
 
     public QueueImpl(int len) {
         // TO-DO
+        this.data = (E[])new Object[len];
     }
 
     public void push(E e) throws FullQueueException {
         // TO-DO
+        if (isFull()) throw new FullQueueException();
+
+        this.data[this.p++]=e;
+
     }
 
 
@@ -28,6 +33,6 @@ public class QueueImpl<E> implements Queue<E>{
 
     public int size() {
         //TO-DO
-        return 0;
+        return this.p;
     }
 }
