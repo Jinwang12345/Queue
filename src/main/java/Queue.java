@@ -7,25 +7,25 @@
 public interface Queue<E> {
 
     /**
-     * Afegeix (encua) un nou element al final de la cua.
+     * Añade (encúa) un nuevo elemento al final de la cola.
      *
-     * @param e l'element a afegir a la cua
-     * @throws FullQueueException si la cua està plena i no es poden afegir més elements
+     * @param y el elemento a añadir a la cola
+     * @throws FullQueueException si la cola está llena y no se pueden añadir más elementos
      */
     public void push(E e) throws FullQueueException;
 
     /**
-     * Extreu (desencua) i retorna l'element situat al capdavant de la cua.
+     * Extrae (desencúa) y devuelve el elemento situado al frente de la cola.
      *
-     * @return l'element al capdavant de la cua
-     * @throws EmptyQueueException si la cua està buida i no hi ha cap element per extreure
+     * @return el elemento al frente de la cola
+     * @throws EmptyQueueException si la cola está vacía y no hay ningún elemento para extraer
      */
     public E pop() throws EmptyQueueException;
 
     /**
-     * Retorna la quantitat d'elements actuals que hi ha a la cua.
+     * Devuelve la cantidad de elementos actuales que hay en la cola.
      *
-     * @return el nombre d'elements presents a la cua
+     * @return el número de elementos presentes en la cola
      */
     public int size();
 }

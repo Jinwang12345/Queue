@@ -17,7 +17,7 @@ public class Main {
             System.out.println(q.size());
             q.push(5);
             System.out.println(q.size());
-            q.push(6);
+            q.push(6);//provoca la excepcion
 
         } catch (FullQueueException fullExp) {
             //
@@ -25,7 +25,7 @@ public class Main {
             fullExp.printStackTrace();
         }
 
-        System.out.println("Inicialitzem la cua, afegim 3 elements i els desencolem!!!");
+        System.out.println("Inicializamos la cola, añadimos 3 elementos y los desencolamos!!!");
 
         try {
             q = new QueueImpl<Integer>(5);
