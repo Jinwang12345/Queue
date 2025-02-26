@@ -17,7 +17,7 @@ public class QueueImpl<E> implements Queue<E>{
             throw new FullQueueException();
         }
         // Inserta el elemento en la posición p y luego incrementa p.
-        this.data[this.p--] = e;
+        this.data[this.p++] = e;
     }
 
 
